@@ -1,0 +1,170 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, sans-serif;
+  background: #060b16;
+  color: #edf2f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #12213b 0%, #060b16 60%);
+}
+
+.app-shell {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 28px 18px 48px;
+}
+
+.app-header {
+  margin-bottom: 24px;
+}
+
+.app-header h1 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin: 0 0 10px;
+}
+
+.app-header p {
+  margin: 0;
+  color: #9aa7c4;
+}
+
+.feed-shell {
+  display: grid;
+  gap: 18px;
+}
+
+.feed-panel {
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 22px;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.panel-header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.status-chip {
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.12);
+  color: #abf8ff;
+}
+
+.event-form {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.event-form label {
+  display: grid;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #d1d5db;
+}
+
+.event-form input,
+.event-form select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(15, 23, 42, 0.95);
+  color: #eef2ff;
+}
+
+.event-form button {
+  width: fit-content;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 12px;
+  background: #0ea5e9;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.alerts-list {
+  display: grid;
+  gap: 12px;
+}
+
+.alert-card {
+  padding: 18px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.alert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.alert-card strong {
+  font-size: 1rem;
+}
+
+.severity-chip {
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.severity-critical {
+  background: #ef4444;
+  color: white;
+}
+
+.severity-high {
+  background: #f97316;
+  color: white;
+}
+
+.severity-medium {
+  background: #facc15;
+  color: #1f2937;
+}
+
+.alert-body p {
+  margin: 0 0 8px;
+  color: #cbd5e1;
+}
+
+.metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.empty-state {
+  padding: 28px;
+  border-radius: 16px;
+  background: rgba(30, 41, 59, 0.85);
+  color: #9ca3af;
+  text-align: center;
+}
